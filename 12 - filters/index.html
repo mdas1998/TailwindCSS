@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filters with TailwindCSS</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black invert">Hello world</div>
+  
+  <div class="relative size-50 flex justify-center items-center text-2xl text-black
+            before:content-[''] before:absolute before:inset-0 before:bg-[url('./monkey.jpg')] 
+            before:bg-cover before:bg-center before:bg-no-repeat before:blur-sm">
+  <span class="relative z-10">Blur</span>
+</div>
+
+
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black brightness-50">Brightness 100</div>
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black brightness-150">Brightness 150</div>
+
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black contrast-50">Contrast 50</div>
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black contrast-150">Contrast 150</div>
+
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black grayscale-50">Grayscale 50</div>
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black grayscale-150">Grayscale 150</div>
+
+    <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black hue-rotate-50">Hue 50</div>
+  <div class="size-50 bg-amber-200 bg-[url(./monkey.jpg)] bg-cover bg-center flex justify-center items-center bg-no-repeat text-2xl text-black hue-rotate-180">Hue 180</div>
+</body>
+</html>
